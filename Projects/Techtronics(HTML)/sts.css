@@ -1,0 +1,32 @@
+
+.box{
+    padding:15px;
+    margin-top: 15px;
+}
+.but{
+    background-color: Red;
+    border: none;
+    padding:15px;
+    border-radius: 5px;
+}
+.content{
+    display: none;
+    background-color: #f1f1f1;
+    width: 30%;
+}
+.content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.box:hover .content {
+    display: block;
+
+}
+.content a:hover{
+    background-color: burlywood;
+}
+.box:hover .but{
+    color: black;
+}

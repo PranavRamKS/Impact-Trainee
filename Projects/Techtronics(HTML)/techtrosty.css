@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+.box {
+    margin-top: 5px;
+    padding: 20px;
+}
+
+#header {
+    background-color: black;
+    color: white;
+    padding: 10px 75px;
+    text-align: center;
+    border-radius: 25px;
+    font-family: 'Silkscreen', cursive;
+}
+
+.navi {
+    margin-top: 10px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+    margin-bottom: auto;
+    position: relative;
+    border-radius: 25px;
+    text-align: center;
+}
+.home{
+    color: #f8f8fa;
+    background-color: white;
+}
+
+.box .but {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-radius: 25px;
+    font-style: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box .but:hover {
+    background-color: #3399ff;
+    color: white;
+}
+
+.box a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+}
+
+.box:hover .content {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 125px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.content a {
+    color: white;
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: center;   
+}
+
+.content a:hover {
+    background-color: #3399ff;
+    border-radius: 25px;    
+}
+
+.login {
+    background-color: bisque;
+    padding: 1rem;
+    text-align: center;
+}
+.phones h3{
+    text-align: center;
+ }
+ .phones img{
+     margin-top: 20px;
+     margin-left: 62ex;
+     padding: 10px;
+     border-radius: 25px;
+ }
+
+.media {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
+    position: relative;
+    
+}
+
+.audio {
+    padding: auto;
+}
+
+.video {
+    padding: auto;
+    width: 320px;
+    height: 210px;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #79c3f2, #f8f8fa);
+}
+
+.imag {
+    padding: auto;
+    width: 320px;
+    height: 210px;
+    border-radius: 25px;
+}
+footer{
+    position: sticky;
+    margin-top: 15%;
+    margin-bottom: none;
+    padding: none;
+    background-color:black;
+    margin-left: none;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    border-top-left-radius: 25px;
+}
+footer i{
+    color: rgb(255, 255, 255);
+}
+.med {
+    width: 25rem;
+    height: 28rem;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3);
+    
+}
+.med h4{
+    text-align: center;
+    font-style: bold;
+}
+.med p{
+    margin: 10px;
+    padding-left: 5px;
+    text-align: left;
+}
+.med ul{
+    font-size: 15px;
+    padding-left: 10px;
+    margin-left:  16px; 
+}
+.med img {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: none;
+}

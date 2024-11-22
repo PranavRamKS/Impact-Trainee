@@ -1,0 +1,43 @@
+title { 
+    font-size: 18px;
+    font-weight: bold; 
+    font-align: centre; 
+    color: black; 
+    border-radius: 25px;
+    }
+
+.cent {
+     margin: auto;
+     width: 60%;
+     padding: 10px;
+    border: #000000;
+    border-radius: 25px;
+    align-items: flex-start;
+}
+   
+Input[type=text],date,tel{       
+    padding: 14px;        
+    color: black;        
+    background-color:white;
+    border-radius: 10%;
+} 
+Input[type=email],date,tel{         
+    padding: 14px;        
+    color: black;
+    background-color:whitesmoke;
+    border-radius: 10%;
+}
+Input[type=tel],date,tel{ 
+    padding: 14px; 
+    color: Black;
+    background-color:white;
+    border-radius: 10%;
+} 
+Input[type=submit] {        
+    background-color: whitesmoke; 
+    color: Black; 
+    padding: 10px 15px;
+    cursor: pointer; 
+    float: centre; 
+    border-radius: 10%;
+}

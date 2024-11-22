@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Class Script</h2>
+    <p id="eg"></p>
+    <script>
+      class product {
+        constructor(productName, productPrice){
+            this.productName = productName;
+            this.productPrice=productPrice;
+        }
+      }  
+      const Product1 = new product("IPhone",125000);
+      const Product2 = new product("Pixel 7 pro",79000);
+      document.getElementById("eg").innerHTML=Product1.productName+" "+Product1.productPrice +" "+Product2.productName+" "+Product2.productPrice ;
+    </script>
+</body>
+</html>

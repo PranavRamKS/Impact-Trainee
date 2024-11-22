@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="reg.css">
+    <title>Join us</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form id="form" action="Welcomereg.html" onsubmit="return validate()">
+            <div class="header">
+                <h1>Join us😁</h1>
+            </div>
+
+            <div class="form-control">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Ex:Rob"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'" required><br><br>
+            </div>
+
+            <div class="form-control">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Ex:jackob"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+            </div>
+
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input autocomplete="off" type="text" id="username" name="username" placeholder="jhon"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'">
+                <span id="user-name"></span><br><br>
+            </div>
+
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input autocomplete="off" type="email" id="email" name="email" placeholder="jhon@gmail.com"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'">
+                <span id="Email-error"></span><br><br>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" onfocus="this.style.backgroundColor='grey'"
+                    onblur="this.style.backgroundColor='white'">
+                <span id="pass-errror"></span><br><br>
+            </div>
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" name="password2" onfocus="this.style.backgroundColor='grey'"
+                    onblur="this.style.backgroundColor='white'">
+                <span id="pass2-error"></span><br><br>
+            </div>
+
+            <div class="form-control">
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Ex:9876543210"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br><br>
+            </div>
+
+            <div class="form-control">
+                <label for=" DOB">DOB:</label>
+                <input type="date" id="DOB" name="DOB"><br><br>
+            </div>
+
+            <div class="form-control">
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="female"> Others <br><br>
+            </div>
+
+            <button type="submit" value="Submit" id="submit">Join me too</button>
+
+
+        </form>
+    </div>
+    <script src="validate.js"></script>
+
+</body>
+
+</html>
