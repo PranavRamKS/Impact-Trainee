@@ -1,0 +1,28 @@
+<header>Product page</header>
+<app-menubar></app-menubar>
+
+<body>
+    <div class="row grid">
+        <div class="image">
+
+            <img src="{{finalproduct.thumbnail}}" alt="image">
+        </div>
+
+        <div class="details">
+            <h3>{{finalproduct.title}}</h3>
+            <h4>Quantity:</h4>
+            <input type="number" min="1" max="10" [(ngModel)]="finalproduct.quantity">
+            <h4>Discription:</h4>
+            <p>{{finalproduct.description}}</p>
+            <h4>Price:</h4>
+            <p>{{finalproduct.price| currency:'INR'}}</p>
+            <h4>Offer Price:</h4>
+            <p>{{finalproduct.price|priceDiscount| currency:'INR'}}</p>
+            <div class="Action"><a routerLink="/purchase"><button id="buy">Buy now</button></a>
+                <div ><p><button class="cart"  (click)=addtocart(finalproduct)>Add to cart</button></p></div>
+                <!-- <div ><p><button class="cart"  (click)=alertUser()>Add to cart</button></p></div> -->
+            </div>
+        </div>
+    </div>
+</body>
+<app-footer></app-footer>

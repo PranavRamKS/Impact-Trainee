@@ -1,0 +1,29 @@
+
+<body>
+  <form  class="form"(ngSubmit)="submit()" [formGroup]="loginForm">
+
+  <h1>Log in please..😁</h1>
+  <label for="name">User E-mail</label>
+  <input autocomplete="off" type="text" formControlName="username"required pattern="^[0-9a-zA-Z]+[._]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$" >
+  <div *ngIf="loginForm.controls['username'].invalid&&loginForm.controls['username'].dirty" class="error">
+    <small class="text" *ngIf="loginForm.controls['username'].errors?.['required']" style="color: red; padding-left: 10%;">Please enter user email </small>
+    <small class="text" *ngIf="loginForm.controls['username'].errors?.['pattern']" style="color: red;padding-left: 10%;">Please enter the valid email</small>
+  </div>
+
+  <label for="pass">Password</label>
+  
+  <input type="password" formControlName="password" required pattern="">
+  <div *ngIf="loginForm.controls['password'].invalid&&loginForm.controls['password'].touched" class="error">
+    <small class="text" *ngIf="loginForm.controls['password'].errors?.['required']" style="color: red;padding-left: 10%;">Please enter Password</small>
+    <small class="text" *ngIf="loginForm.controls['password'].errors?.['minlength']" style="color: red;padding-left: 10%;">Password should be atleast 6 letters</small>
+    </div>
+
+  <button type="submit">Log in</button>
+  <a routerLink="/resetpass">Forgot password..?</a>
+  <a>New member..?</a>
+  <a routerLink="/register">
+      Register😁
+  </a>
+  <a routerLink="/home">Home</a>
+</form>
+</body>

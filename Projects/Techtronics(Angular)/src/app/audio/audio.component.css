@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+header {
+    padding: 20px 75px;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    font-size: 25px;
+    /* background: linear-gradient(to right, #79c3f2, #f8f8fa); */
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.gridOffer{
+    padding: 1px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3); 
+    text-align: center;
+    width: 100%;
+  }
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    gap:10px;
+    place-items: center;
+}
+
+.type {
+    width: 10rem;
+    height: 8rem;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    
+}
+.type:hover{
+    transform: scale(1.1);
+}
+
+.type h4{
+    text-align: center;
+    margin-top: 0px;
+    text-decoration: none;
+}
+.type img{
+    margin-top: 2px;
+    border-radius: 30px;
+    height: 60%;
+    width: 100%;
+}
+
+
+table{
+    margin-top: 10vh;
+    padding: 10px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3); 
+    text-align: center;
+    align-items: center;
+}
+
+table img{
+    border-radius: 20px;
+    max-width: 50vh;
+    max-height: 35vh;
+}
+
+table a{
+    padding: 10px;
+    width: 20vh;
+    color: white;
+    border: none;
+    background-color: rgb(41, 57, 194);
+    border-radius: 4px;
+}
+
+th{
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px solid;
+}
+table tbody td .buy{
+    text-decoration: none;
+}

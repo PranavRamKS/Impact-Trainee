@@ -1,0 +1,10 @@
+<div class="email">
+  <h2>Password reset</h2>
+  <form class="form" [formGroup]="reset">
+  <label for="email">Enter tha e-mail id for password reset</label><br>
+  <input type="email" id="email" class="inp-box"
+    pattern="^[0-9a-zA-Z]+[._]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$"
+    formControlName="email" />
+    <button type="submit"(click)="submit()" >Send link</button>
+  </form>
+</div>

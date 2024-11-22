@@ -1,0 +1,117 @@
+
+.profile{
+    margin-top: 10vh;
+    margin-left: 30%;
+    padding: 10px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3); 
+    max-width: 500px;
+    
+}
+
+.profile img{
+    /* margin-left: 40%; */
+    max-width: 100px;
+   max-height: 100px;
+   border-radius: 50%;
+}
+
+.profile h2{
+    text-align: center;
+}
+
+.userinfo{
+    margin-top: 10vh;
+    padding: 10px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3); 
+    text-align: center;
+}
+.userinfo table{
+    margin-left: 35%;
+    align-items: center;
+}
+
+.userinfo table td,th{
+    text-align: center;
+    padding: 10px;
+    padding: 5px;
+    border-bottom: 1px solid;
+    align-items: center;
+}
+
+.userinfo button{
+    margin: 20px;
+    padding: 10px;
+    width: 20vh;
+    color: white;
+    border: none;
+    background-color: rgb(41, 57, 194);
+    border-radius: 4px;
+}
+
+.myOrders{
+    margin-top: 10vh;
+    padding: 10px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3); 
+    text-align: center;
+    align-items: center;
+}
+
+.myOrders table td,th{
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px solid;
+}
+
+.myOrders table img{
+    border-radius: 20px;
+}
+
+.myOrders button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 20vh;
+    color: white;
+    border: none;
+    background-color: rgb(41, 57, 194);
+    border-radius: 4px;
+}
+
+.logout{
+    margin-left: 95%;
+    width: 70px;
+}
+.logout button{
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    background-color: rgb(41, 57, 194);
+    border-radius: 4px;
+}
+.home{
+    align-items: center;
+    margin-left: 48%;
+}
+.home button{
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    background-color: rgb(41, 57, 194);
+    border-radius: 4px;
+}

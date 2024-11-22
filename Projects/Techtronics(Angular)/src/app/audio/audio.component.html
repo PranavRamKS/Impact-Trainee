@@ -1,0 +1,100 @@
+<header> Audio </header>
+<app-menubar></app-menubar>
+
+<body>
+    <div class="gridOffer">
+    <div class="flash">
+        <i class="fa-solid fa-xmark" ></i>
+        <h2>Big Saving days Ends in</h2>
+        <h4> {{demo}} </h4>
+    </div>
+  </div>
+    <h3>Types available </h3>
+    <div class="container grid">
+
+
+        <div class="type">
+            <h4>ANC</h4>
+            <img [src]="ancImg.ancIcon" alt="image">
+        </div>
+
+
+
+        <div class="type">
+            <h4>On Ear</h4>
+            <img [src]="onearImg.onearIcon" alt="image">
+        </div>
+
+
+
+        <div class="type">
+            <h4>In Ear</h4>
+            <img [src]="inearImg.inearIcon" alt="image" height="80">
+        </div>
+
+
+
+        <div class="type">
+            <h4>TWS</h4>
+            <img [src]="twsImg.twsIcon" alt="image">
+        </div>
+
+
+
+        <div class="type">
+            <h4>Over Ear</h4>
+            <img [src]="overearImg.overearIcon" alt="image" height="80">
+        </div>
+
+
+        <div class="type">
+            <h4>Neck bands</h4>
+            <img [src]="neckbandImg.neckbandIcon" alt="image">
+        </div>
+
+
+
+        <div class="type">
+            <h4>BT Speaker</h4>
+            <img [src]="btspeakerImg.btspeakerIcon" alt="image">
+        </div>
+
+
+
+        <div class="type">
+            <h4>Home theatre</h4>
+            <img [src]="hometheaterImg.hometheaterIcon" alt="image">
+        </div>
+
+
+
+    </div>
+
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Showcase</th>
+            <th>Brand Name</th>
+            <th>Device name</th>
+            <th>Discription</th>
+            <th>Price</th>
+            <th>Sale Price</th>
+            <th>Buy</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let eachData of getdetails">
+                <td>{{eachData.id}}</td>
+                <td><img [src]=eachData.thumbnail /></td>
+                <td>{{eachData.brand}}</td>
+                <td>{{eachData.title}}</td>
+                <td>{{eachData.description}}</td>
+                <td>{{eachData.price | currency:'INR'}}</td>
+                <td>{{eachData.price |priceDiscount| currency:'INR'}}</td>
+                <td><a routerLink="/audioProduct/{{eachData.title}}" class="buy">
+                        Buy Now
+                    </a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<app-footer></app-footer>

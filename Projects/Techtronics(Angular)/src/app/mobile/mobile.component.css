@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+header {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    padding: 10px 75px;
+    text-align: center;
+    border-radius: 25px;
+    font-family: 'Silkscreen', cursive;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.gridOffer{
+  padding: 1px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 30px;
+  border-left: rgba(255, 255, 255, 0.3);
+  border-top: rgba(255, 255, 255, 0.3); 
+  text-align: center;
+  width: 100%;
+}
+table{
+    margin-top: 5px;
+    padding: 1px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3); 
+    text-align: center;
+    width: 100%;
+}
+
+table img{
+    border-radius: 20px;
+    max-width: 50vh;
+    max-height: 35vh;
+}
+
+table a{
+    padding: 10px;
+    width: 20vh;
+    color: white;
+    border: none;
+    background-color: rgb(41, 57, 194);
+    border-radius: 4px;
+}
+
+th{
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px solid;
+}
+table tbody td .buy{
+    text-decoration: none;
+}

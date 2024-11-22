@@ -1,0 +1,84 @@
+<header>Laptops</header>
+<app-menubar></app-menubar>
+<body>
+    <div class="gridOffer">
+        <div class="flash">
+            <i class="fa-solid fa-xmark" ></i>
+            <h2>Big Saving days Ends in</h2>
+            <h4> {{demo}} </h4>
+        </div>
+      </div>
+  <div class="container grid">
+
+    <div class="type">
+        <h4>
+            Asus
+        </h4>
+        <img [src]="asusImg.asusLogo" alt="image">
+    </div>
+
+    <div class="type">
+        <h4>
+            Mac
+        </h4>
+        <img [src]="appleImg.appleLogo" alt="image">
+    </div>
+
+    <div class="type">
+        <h4>
+            hp
+        </h4>
+        <img [src]="hpImg.hpLogo" alt="image">
+    </div>
+
+    <div class="type">
+        <h4>
+            Dell
+        </h4>
+        <img [src]="dellImg.dellLogo" alt="image">
+    </div>
+
+    <div class="type">
+        <h4>
+            acer
+        </h4>
+        <img [src]="acerImg.acerLogo" alt="image">
+    </div>
+
+    <div class="type">
+        <h4>
+            Realme
+        </h4>
+        <img [src]="realmeImg.realmeLogo" alt="image">
+    </div>
+ </div> 
+ <table>
+    <thead>
+      <th>ID</th>
+      <th>Showcase</th>
+      <th>Brand Name</th>
+      <th>Device name</th>
+      <th>Discription</th>
+      <th>Price</th>
+      <th>Sale Price</th>
+      <th>Buy</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let eachData of getdetails">
+        <td>{{eachData.id}}</td>
+        <td><img [src] = "eachData.thumbnail" /></td>
+        <td>{{eachData.Brand}}</td>
+        <td>{{eachData.title}}</td>
+        <td>{{eachData.description}}</td>
+        <td>{{eachData.price| currency:'INR'}}</td>
+        <td>{{eachData.price|priceDiscount | currency:'INR'}}</td>
+        <td>
+            <a routerLink="/productPage/{{eachData.title}}" class="buy">
+            Buy Now
+        </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>   
+</body>
+<app-footer></app-footer>

@@ -1,0 +1,47 @@
+<div class="dashboard">
+    <div class="logout">
+        <button (click)="logOut()">log out</button>
+    </div>
+
+    <div class="bio">
+        <div class="profile">
+            <img src="../assets/Images/" alt="">
+            <h2>{{login.Name}}</h2>
+
+        </div>
+    </div>
+
+
+    <div class="userinfo">
+        <h3>Your Information</h3>
+
+        <table>
+            <tr>
+                <th>Nick name</th>
+                <td>{{login.Name}}</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>{{login.date}}</td>
+            </tr>
+            <tr>
+                <th>E-mail</th>
+                <td>{{login.email}}</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{login.phone}}</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>{{login.address}}</td>
+            </tr>
+        </table>
+
+
+    </div>
+    <div class="home">
+        <button (click)="home()">Home</button>
+    </div>
+
+</div>

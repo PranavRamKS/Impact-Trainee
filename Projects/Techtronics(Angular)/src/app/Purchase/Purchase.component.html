@@ -1,0 +1,60 @@
+<header>Procede to buy</header>
+<div class="container">
+
+    <form id="form" [formGroup]="paymentForm">
+        <div class="header">
+            <h1>Make payment </h1>
+        </div>
+
+        <div class="form-control">
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Ex:Rob" onfocus="this.style.backgroundColor='grey'"
+                onblur="this.style.backgroundColor='white'" required [defaultValue]="login.Name"><br><br>
+        </div>
+
+        <div class="form-control">
+            <label for="Address">Address of Delivery</label>
+            <input autocomplete="off" type="text" id="address" name="address" placeholder=""
+                onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'" [defaultValue]="login.address"><br><br>
+        </div>
+
+        <div class="form-control">
+            <label for="email">E-mail</label>
+            <input autocomplete="off" type="email" id="email" name="email" placeholder="jhon@gmail.com"
+                onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'" [defaultValue]="login.email">
+            <span id="Email-error"></span><br><br>
+        </div>
+
+        <div class="form-control">
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Ex:9876543210"
+                onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'" [defaultValue]="login.phone"><br><br><br>
+        </div>
+
+        <div class="form-control">
+            <label for="payBy">Pay by:</label>
+            <input type="radio" name="payBy" value="UPI"> UPI
+            <input type="radio" name="payBy" value="NetNabking">Netbking
+            <input type="radio" name="payBy" value="CreditCard">Credit Card
+            <input type="radio" name="payBy" value="DebititCard">Debit Card
+            <input type="radio" name="payBy" value="CashOnDelivery">Cash On Delivery <br><br>
+        </div>
+
+        <div class="form-control">
+            <label for="cardnumber">Card no:</label>
+            <input type="text" id="cardnumber" name="cardnumber" placeholder="Ex:"
+                onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white' " pattern="^$[0-9]{16}" formControlName="cardNumber"><br><br><br>
+                
+        </div>
+        <div *ngif="paymentForm.control['cardNumber'].dirty">
+            <p *ngif="paymentForm.control['cardNumber'].errors?.['pattern']">Enter the correct Card numbrt </p>
+            <p *ngif="paymentForm.control['cardNumber'].errors?.['required']">Enter the Card numbrt</p>
+        </div>
+
+        <button type="submit" value="Submit" id="submit">Make payment & order</button>
+
+        <button routerLink="/home">Cancel</button>
+
+
+    </form>
+</div>

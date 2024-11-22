@@ -1,0 +1,57 @@
+<div class="navi">
+    
+    <div class="box">
+        <a routerLink="">
+            <button class="but" href="#">
+                <i class="fa-sharp fa-solid fa-house"></i> Home
+            </button>
+        </a>
+    </div>
+
+        <div class="box">
+            <a routerLink="/mobile">
+                <button class="but" href="#">
+                    Moblie
+                </button>
+            </a>
+           
+        </div>
+        <div class="box">
+            <a routerLink="/audio">
+                <button class="but" href="#">
+                    Audio
+                </button>
+            </a>
+           
+        </div>
+        <div class="box">
+            <a routerLink="/laptop">
+                <button class="but">
+                    Laptops
+                </button>
+            </a>
+           
+        </div>
+        <div class="box">
+            <a routerLink="/about">
+                <button class="but">
+                    About us
+                </button>
+            </a>
+        </div>
+        <div class="box" *ngIf="!hideLogin">
+            <a routerLink="/cart">
+                <button class="but" >
+                    Cart
+                </button>
+            </a>
+        </div>
+        <div class="log">
+            <a routerLink="/login">
+                <!-- <button class="but"> -->
+                    <p *ngIf="hideLogin">Login</p>
+                   <span><a routerLink="/userPage"><h2 style="color:aliceblue">{{login.Name}}</h2></a></span>
+                <!-- </button> -->
+            </a>
+        </div>
+    </div>

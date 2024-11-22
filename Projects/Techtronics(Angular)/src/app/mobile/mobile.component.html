@@ -1,0 +1,42 @@
+<header>Mobile</header>
+<app-menubar></app-menubar>
+
+<body>
+  <!-- ----------------------------offer popup--------------------------- -->
+  
+  <div class="gridOffer">
+  <div class="flash">
+      <i class="fa-solid fa-xmark" ></i>
+      <h2>Big Saving days Ends in</h2>
+      <h4> {{demo}} </h4>
+  </div>
+</div>
+
+  <table>
+    <thead>
+      <th>ID</th>
+      <th>Showcase</th>
+      <th>Brand Name</th>
+      <th>Device name</th>
+      <th>Discription</th>
+      <th>Price</th>
+      <th>Sale price</th>
+      <th>Buy</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let eachData of getdetails">
+        <td>{{eachData.id}}</td>
+        <td><img [src]=eachData.thumbnail /></td>
+        <td>{{eachData.brand}}</td>
+        <td>{{eachData.title}}</td>
+        <td>{{eachData.description}}</td>
+        <td>{{eachData.price| currency:'INR'}}</td>
+        <td>{{eachData.price|priceDiscount| currency:'INR'}}</td>
+        <td><a routerLink="/mobileProduct/{{eachData.title}}" class="buy">
+            Buy Now
+          </a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+<app-footer></app-footer>

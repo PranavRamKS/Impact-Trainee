@@ -1,0 +1,149 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.greatings{
+    align-items: center;
+    text-align: center;
+}
+
+.about{
+    text-align:center;
+    font-size: 19px;
+}
+
+.pages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap:10px;
+    place-items: center;
+    
+}
+
+.view {
+    width: 10rem;
+    height: 8rem;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    align-items: center;
+    color: black;
+}
+
+.view:hover{
+    transform: scale(1.1);
+}
+
+.view h4{
+    text-align: center;
+    font-style: bold;
+    margin-top: 0px;
+    font-style: normal;
+}
+
+.view img{
+    margin-top: 2px;
+    padding-left: 20px;
+    border-radius: 30px;
+    height: 60%;
+    width: 100px;
+    margin-left: 10px;
+}
+.exclusive{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    gap:10px;
+    place-items: center;
+}
+.store{
+    
+    text-align: center;
+}
+
+.sto{
+    align-items: center;
+    text-align: center;
+}
+
+.media {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
+    position: relative;
+    
+}
+
+.med {
+    width: 25rem;
+    height: 28rem;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3);
+    
+}
+.med h4{
+    text-align: center;
+    font-style: bold;
+}
+.med p{
+    margin: 10px;
+    padding-left: 5px;
+    text-align: left;
+}
+.med ul{
+    font-size: 15px;
+    padding-left: 10px;
+    margin-left:  16px; 
+}
+.med img {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: none;
+}
+
+.temp {
+    width: 10rem;
+    height: 8rem;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    align-items: center;
+    color: black;
+}
+
+
+.temp h4{
+    text-align: center;
+    font-style: bold;
+    margin-top: 0px;
+    font-style: normal;
+}
+
+.temp img{
+    margin-top: 2px;
+    border-radius: 30px;
+    width: 80%;
+    height: 60%;
+    margin-left: 7px;
+}
+
+.audioType{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    gap:10px;
+    place-items: center;
+}

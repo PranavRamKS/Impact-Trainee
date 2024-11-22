@@ -1,0 +1,186 @@
+<div class="admintask">
+    <div class="logout">
+        <button (click)="logOut()">log out</button>
+    </div>
+
+    <div class="bio">
+        <div class="profile">
+            <img src="Images/profile Default.jpg" alt="">
+            <h2>{{login.Name}}</h2>
+
+        </div>
+    </div>
+
+    <div class="profile">
+        <h3>Add product  </h3>
+    </div>
+
+
+    <div class="addproduct grid">
+        <form class="form" [formGroup]="productForm">
+            <div class="header">
+                <h1>Add laptop</h1>
+            </div>
+            <div class="form-control">
+                <label>Model:</label>
+                <input type="text" id="Model" name="Model" placeholder="Ex:Rob" formControlName="title"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productForm.controls['title'].invalid&&productForm.controls['title'].touched">
+                    <small *ngIf="productForm.controls['title'].errors?.['required']">Please enter model</small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label>brand:</label>
+                <input type="text" id="brand" name="brand" placeholder="Ex:Rob" formControlName="brand"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productForm.controls['brand'].invalid&&productForm.controls['brand'].touched">
+                    <small *ngIf="productForm.controls['brand'].errors?.['required']">Please enter brand</small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="discription">description:</label>
+                <input type="text" id="description" name="description" placeholder="Ex:Rob"
+                    formControlName="description" onfocus="this.style.backgroundColor='grey'"
+                    onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productForm.controls['description'].invalid&&productForm.controls['description'].touched">
+                    <small *ngIf="productForm.controls['description'].errors?.['required']">Please enter description
+                    </small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label>Category</label>
+                <input type="text" id="category" name="category" placeholder="Ex:Rob" formControlName="category"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productForm.controls['category'].invalid&&productForm.controls['category'].touched">
+                    <small *ngIf="productForm.controls['category'].errors?.['required']">Please enter category</small>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <label>Price:</label>
+                <input type="number" id="Rate" name="price" placeholder="Ex:Rob" formControlName="price"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productForm.controls['price'].invalid&&productForm.controls['price'].touched">
+                    <small *ngIf="productForm.controls['price'].errors?.['required']">Please enter price</small>
+                </div>
+            </div>
+
+            <input type="button" type="submit" value="Add laptop" [disabled]="this.productForm.invalid"
+                (click)="addlaptop()">
+
+        </form>
+
+        <form class="form" [formGroup]="productMobile">
+            <div class="header">
+                <h1>Add Mobile</h1>
+            </div>
+            <div class="form-control">
+                <label>Model:</label>
+                <input type="text" id="Model" name="Model" placeholder="Ex:Rob" formControlName="title"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productMobile.controls['title'].invalid&&productMobile.controls['title'].touched">
+                    <small *ngIf="productMobile.controls['title'].errors?.['required']">Please enter model</small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label>brand:</label>
+                <input type="text" id="brand" name="brand" placeholder="Ex:Rob" formControlName="brand"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productMobile.controls['brand'].invalid&&productMobile.controls['brand'].touched">
+                    <small *ngIf="productMobile.controls['brand'].errors?.['required']">Please enter brand</small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="discription">description:</label>
+                <input type="text" id="description" name="description" placeholder="Ex:Rob"
+                    formControlName="description" onfocus="this.style.backgroundColor='grey'"
+                    onblur="this.style.backgroundColor='white'"><br><br>
+                <div
+                    *ngIf="productMobile.controls['description'].invalid&&productMobile.controls['description'].touched">
+                    <small *ngIf="productMobile.controls['description'].errors?.['required']">Please enter description
+                    </small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label>Category</label>
+                <input type="text" id="category" name="category" placeholder="Ex:Rob" formControlName="category"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productMobile.controls['category'].invalid&&productMobile.controls['category'].touched">
+                    <small *ngIf="productMobile.controls['category'].errors?.['required']">Please enter category</small>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <label>Price:</label>
+                <input type="number" id="Rate" name="price" placeholder="Ex:Rob" formControlName="price"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productMobile.controls['price'].invalid&&productMobile.controls['price'].touched">
+                    <small *ngIf="productMobile.controls['price'].errors?.['required']">Please enter price</small>
+                </div>
+            </div>
+
+            <input type="button" type="submit" value="Add Mobile" [disabled]="this.productMobile.invalid"
+                (click)="addmobile()">
+
+        </form>
+
+        <form class="form" [formGroup]="productAudio">
+            <div class="header">
+                <h1>Add Audio device</h1>
+            </div>
+            <div class="form-control">
+                <label>Audio device:</label>
+                <input type="text" id="Model" name="Model" placeholder="Ex:Rob" formControlName="title"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productAudio.controls['title'].invalid&&productAudio.controls['title'].touched">
+                    <small *ngIf="productAudio.controls['title'].errors?.['required']">Please enter model</small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label>brand:</label>
+                <input type="text" id="brand" name="brand" placeholder="Ex:Rob" formControlName="brand"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productAudio.controls['brand'].invalid&&productAudio.controls['brand'].touched">
+                    <small *ngIf="productAudio.controls['brand'].errors?.['required']">Please enter brand</small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="discription">description:</label>
+                <input type="text" id="description" name="description" placeholder="Ex:Rob"
+                    formControlName="description" onfocus="this.style.backgroundColor='grey'"
+                    onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productAudio.controls['description'].invalid&&productAudio.controls['description'].touched">
+                    <small *ngIf="productAudio.controls['description'].errors?.['required']">Please enter description
+                    </small>
+                </div>
+            </div>
+            <div class="form-control">
+                <label>Category</label>
+                <input type="text" id="category" name="category" placeholder="Ex:Rob" formControlName="category"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productAudio.controls['category'].invalid&&productAudio.controls['category'].touched">
+                    <small *ngIf="productAudio.controls['category'].errors?.['required']">Please enter category</small>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <label>Price:</label>
+                <input type="number" id="Rate" name="price" placeholder="Ex:Rob" formControlName="price"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'"><br><br>
+                <div *ngIf="productAudio.controls['price'].invalid&&productAudio.controls['price'].touched">
+                    <small *ngIf="productAudio.controls['price'].errors?.['required']">Please enter price</small>
+                </div>
+            </div>
+
+            <input type="button" type="submit" value="Add Audio device" [disabled]="this.productAudio.invalid"
+                (click)="addAudio()">
+
+        </form>
+
+    </div>
+
+    <div class="home">
+        <button (click)="home()">Home</button>
+    </div>
+
+</div>
